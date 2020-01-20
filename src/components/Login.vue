@@ -57,6 +57,7 @@ export default {
       ) {
         alert("ok");
         this.$emit("fezLogin");
+        this.$router.push("home");
       } else {
         alert("deu ruim");
       }

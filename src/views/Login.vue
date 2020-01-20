@@ -17,6 +17,7 @@ export default {
   }),
   methods: {
     fezLogin() {
+      alert("aeee");
       this.logado = !this.logado;
       return this.logado;
     }

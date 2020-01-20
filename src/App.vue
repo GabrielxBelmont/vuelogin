@@ -11,8 +11,15 @@ export default {
   name: "App",
   data: () => ({
     usuario: "",
-    senha: ""
+    senha: "",
+    logado: false
     //
-  })
+  }),
+  methods: {
+    fezLogin() {
+      this.logado = !this.logado;
+      return this.logado;
+    }
+  }
 };
 </script>
