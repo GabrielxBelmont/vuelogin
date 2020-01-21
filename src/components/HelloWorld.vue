@@ -33,7 +33,7 @@
         <v-row align="center" justify="center">
           <v-col class="shrink">
             <v-tooltip right>
-              <template v-slot:activator="{ on }"> </template>
+              <template v-slot:activator="{ on }">{{ dados }}</template>
             </v-tooltip>
           </v-col>
         </v-row>
@@ -54,7 +54,8 @@ export default {
   },
   data: () => ({
     drawer: null,
-    random: ""
+    random: "",
+    dados: ""
   }),
   mixins: [loginMixin],
   created() {
@@ -64,6 +65,9 @@ export default {
     pegaDados: function() {
       alert(loginMixin.loginData[this.$route.params.user]);
     }
+  },
+  mounted() {
+    this.dados += loginMixin.loginData[this.$route.params.user];
   }
 };
 </script>
