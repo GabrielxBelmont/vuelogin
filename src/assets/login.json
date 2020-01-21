@@ -1,10 +1,17 @@
-[{
+{
+  "Pablo":{
     "usuario": "Pablo",
     "senha": "12345",
-    "batata": "testando a atribuição"
+    "batata": "testando a atribuição",
+    "nomeComp": "Pablo Escobardo Pacheco",
+    "toDo": "escovar os dentes"
   },
-  {
+  "Simão":{
     "usuario": "Simão",
-    "senha": "123"
-  }]
+    "senha": "123",
+    "batata": "asdoinmef",
+    "nomeComp": "Simão Belomonte Machado",
+    "toDo": "Matar morcegos"
+  }
+}
 

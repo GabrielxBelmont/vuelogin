@@ -52,14 +52,12 @@ export default {
   methods: {
     fiadaputa: function() {
       if (
-        this.usuario == loginMixin.loginData.usuario &&
-        this.senha == loginMixin.loginData.senha
+        this.usuario == loginMixin.loginData[this.usuario][0] &&
+        this.senha == loginMixin.loginData[this.usuario][1]
       ) {
         alert("ok");
         this.$emit("fezLogin");
-        this.$router.push("home");
-      } else {
-        alert("deu ruim");
+        this.$router.push("home/" + this.usuario);
       }
     }
   }

@@ -1,8 +1,7 @@
 // @format
 export default {
   loginData: {
-    usuario: "Pablo",
-    senha: "12345",
-    batata: "testando a atribuição"
+    Pablo: ["Pablo", "12345", "Pablo Escobardo Pacheco", "escovar os dentes"],
+    Simão: ["Simão", "123", "Simão Belmonte Machado", "Matar morcegos"]
   }
 };
