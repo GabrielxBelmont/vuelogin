@@ -29,7 +29,7 @@
   </v-card>
 </template>
 <script>
-import loginMixin from "../mixins/dadosLogin";
+import loginMixin from "@/mixins/dadosLogin";
 export default {
   name: "login-form",
   props: {
